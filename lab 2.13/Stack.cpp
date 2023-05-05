@@ -52,14 +52,12 @@ void evenOdd(Stack *s) {
 	int array[100];
 	for (int i = 0; i <= s->head; i++)
 		array[i] = s->data[i];
-
-	for (int i = 0; i <= s->head; i++) {
-		for (int j = 1; j <= s->head - 1; j++) {
-			int tmp = array[i];
-			array[i] = array[j];
-			array[j] = tmp;
-		}
+	for (int i = 0; i <= s->head - 2; i++) {
+		int tmp = array[i];
+		array[i] = array[i + 2];
+		array[i + 2] = tmp;
 	}
+
 	printf("Вывод четного/нечетного: ");
 	for (int i = 0; i <= s->head; i++) {
 		printf("%d", array[i]);
