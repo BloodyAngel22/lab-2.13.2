@@ -4,8 +4,7 @@
 
 struct Stack {
 	int* data;
-	int head;
-	int size;
+	int lenght;
 };
 extern Stack* s;
 
