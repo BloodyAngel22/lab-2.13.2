@@ -7,7 +7,7 @@ int main() {
 	int lenght = 0;
 	int value;
 	Stack* s = (Stack*)malloc(sizeof(Stack));
-	init(s, 100);
+	init(s, Mbait);
 	while (true) {
 		printf("Выбор: 1 - Добавить новый элемент; 2 - Удалить элемент; 3 - Вывод числа в обратном порядке; 4 - Четное/нечетное; 5 - очистка; 6 - Выход\n");
 		int tmp = 0;

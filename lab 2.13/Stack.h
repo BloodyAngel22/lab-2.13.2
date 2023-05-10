@@ -1,5 +1,5 @@
 #pragma once
-#define SIZE 100
+#define Mbait 1024
 
 
 struct Stack {
